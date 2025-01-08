@@ -66,6 +66,21 @@ else
         
     }
     checkWinner(avgDolphins,avgKoalas)
+    //2
+    function calcTip(bill){
+        return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
+    }
+    console.log("calcTip(100) = " + calcTip(100))
+    var bills = [125, 555, 44]
+    var tips = bills.map(calcTip)
+    var total = bills.map((bill, i) => bill + tips[i])
+
+
+    console.log("Hóa đơn:", bills)
+    console.log("Tiền tip:", tips)
+    console.log("Total:", total)
+   
+
     
     
 
