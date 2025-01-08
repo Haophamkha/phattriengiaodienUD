@@ -42,7 +42,30 @@ else
     tip=bill*0.15
 
     console.log(`The bill was ${bill.toFixed(2)}, The tip was ${tip.toFixed(2)}, The total was ${(bill + tip).toFixed(2)}`)
+    //JF2
+    //1
+    var calAverage = (a,b,c) => (a+b+c)/3
+    dola = 44
+    dolb = 23
+    dolc = 71
     
+    koaa = 65
+    koab = 54
+    koac = 49
+    var avgDolphins = calAverage(dola,dolb,dolc)
+    var avgKoalas = calAverage(koaa,koab,koac)
+    
+    function checkWinner(avgDolphins,avgKoalas){
+        if (avgDolphins >= 2 * avgKoalas) {
+            console.log(`Dolphins thắng (${avgDolphins} vs ${avgKoalas})`);
+        } else if (avgKoalas >= 2 * avgDolphins) {
+            console.log(`Koalas thắng (${avgKoalas} vs ${avgDolphins})`);
+        } else {
+            console.log("Không đội nào thắng!");
+        }
+        
+    }
+    checkWinner(avgDolphins,avgKoalas)
     
     
 
