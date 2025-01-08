@@ -33,3 +33,17 @@ else if(DolphinsAvg==KoalasAvg && DolphinsAvg >= 100 && KoalasAvg >= 100)
 console.log("Dolphins hòa Koalas")
 else 
 console.log("Không đội nào thắng")
+//4
+var bill = 275
+var tip
+if(bill>=50 && bill <=300)
+    tip=bill*0.2
+else 
+    tip=bill*0.15
+
+    console.log(`The bill was ${bill.toFixed(2)}, The tip was ${tip.toFixed(2)}, The total was ${(bill + tip).toFixed(2)}`)
+    
+    
+    
+
+   
