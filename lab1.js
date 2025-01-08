@@ -110,7 +110,30 @@ else
     else {
             console.log(`${MarkMiller.fullname} và ${JohnSmith.fullname} có BMI bằng nhau (${MarkMiller.BMI.toFixed(1)} vs ${JohnSmith.BMI.toFixed(1)})`)
         }
-    
+    //4
+    var bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+    var tips = []
+    var total = []
+
+    for (let i = 0; i < bills.length; i++) {
+        tips.push(calcTip(bills[i]))
+        total.push(bills[i] + tips[i])
+    }
+
+    console.log("Hóa đơn:", bills)
+    console.log("Tiền tip:", tips)
+    console.log("Total:", total)
+
+    function calcAvarage(arr) {
+        let sum = 0
+        for (let i = 0; i < arr.length; i++) {
+            sum += arr[i]
+        }
+        return sum / arr.length
+    }
+    console.log("Average tip:", calcAvarage(tips))
+
+
 
     
     
