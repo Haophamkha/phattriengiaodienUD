@@ -79,7 +79,38 @@ else
     console.log("Hóa đơn:", bills)
     console.log("Tiền tip:", tips)
     console.log("Total:", total)
-   
+   //3
+    var MarkMiller = {
+            
+            fullname: "Mark Miller",
+            mass: 78,
+            height: 1.69,
+            calcBMI: function(){
+                this.BMI = this.mass / (this.height ** 2)
+                return this.BMI
+            }
+    }
+    var  JohnSmith = {
+        
+            fullname: "John Smith",
+            mass: 92,
+            height: 1.95,
+            calcBMI: function(){
+                this.BMI = this.mass / (this.height ** 2)
+                return this.BMI
+            }
+    }
+    MarkMiller.calcBMI()
+    JohnSmith.calcBMI()
+    if (MarkMiller.BMI > JohnSmith.BMI) {
+        console.log(`${MarkMiller.fullname} có BMI cao hơn ${JohnSmith.fullname} (${MarkMiller.BMI.toFixed(1)} vs ${JohnSmith.BMI.toFixed(1)})`)
+    } else if (JohnSmith.BMI > MarkMiller.BMI) {
+        console.log(`${JohnSmith.fullname} có BMI cao hơn ${MarkMiller.fullname} (${JohnSmith.BMI.toFixed(1)} vs ${MarkMiller.BMI.toFixed(1)})`)
+    }
+    else {
+            console.log(`${MarkMiller.fullname} và ${JohnSmith.fullname} có BMI bằng nhau (${MarkMiller.BMI.toFixed(1)} vs ${JohnSmith.BMI.toFixed(1)})`)
+        }
+    
 
     
     
